@@ -1,0 +1,91 @@
+<link rel="stylesheet" href="/assets/croppie/crop.css">
+<link rel="stylesheet" href="/assets/croppie/croppie.css">
+<div>
+    <h2>Cria sua loja!</h2>
+</div>
+
+<div>
+     <section class="dropodowncrop">
+        <span class="closeDropD">X</span>
+        <div class="upload-demo-wrap">
+            <div id="upload-demo"></div>
+        </div>
+        <div class="containerButtons">
+            <div class="upload-msg upFoto">
+                <input type="file" class="dropD" id="fotoInput2" value="Choose a file" accept="image/*" name="imgInput"/>
+                Adicionar Imagem
+            </div>
+            <div class="actions">
+                  <button type="button" class="upload-result">salvar</button>
+                  <div class="rotates-button">
+                    <button class="vanilla-rotate" data-deg="-90"><i class="fa fa-repeat" aria-hidden="true"></i></button>
+                    <button class="vanilla-rotate" data-deg="90"><i class="fa fa-undo" aria-hidden="true"></i></button>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <form method="POST" action="http://192.168.3.123:3333/auth/register">
+        <label for="id_image" class="label_file btn btn-info btn-lg">Enviar foto</label>
+        <input type="file" name="id_image" id="id_image">
+        <label for="profile_picture"></label>
+        <input type="hidden" name="profile_picture" id="id_image_base64">
+        <div class="form-group">
+          <label for="store_name">Nome da loja:</label>
+          <input type="text" class="form-control" name="store_name" placeholder="ex: loja da maria" required>
+        </div>
+        <div class="form-group">
+            <label class="" for="store_link">Crie um link para sua loja</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">www.meucatalogo.com/</div>
+              </div>
+              <input type="text" class="form-control" name="store_link" placeholder="minha-loja" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="bio">Escreva Sobre sua loja</label>
+            <textarea name="bio" class="form-control" id="bio" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input required type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="ex: emaill@email.com">
+            <small name="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        
+        <div class="form-group">
+          <label for="whatsapp">WhatsApp</label>
+          <input type="tel" class="form-control" name="whatsapp" placeholder="ex:5599999999999" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="adress">Rua</label>
+          <input type="text" class="form-control" name="adress" placeholder="Ex: Rua monte castelo" required>
+        </div>
+        <div class="form-group">
+          <label for="CEP">CEP</label>
+          <input type="text" class="form-control" name="CEP" placeholder="ex: 00000-000" required>
+        </div>
+        <div class="form-group">
+          <label for="username">Usuário para login:</label>
+          <input type="text" class="form-control" name="username" placeholder="ex: usuario" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Crie uma senha:</label>
+          <input type="password" class="form-control" name="password" placeholder="ex: ***********" required>
+        </div>
+        <input type="hidden" for>
+        <button type="submit" class="btn btn-primary btn-block btn-lg">Submit</button>
+    </form>
+</div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+
+      <script src="/assets/croppie/croppie.min.js"></script>
+      <script src="/assets/croppie/demo/demo.js"></script>
+      
+      <script src="/assets/croppie/demo/prism.js"></script>
+      <script src="/assets/croppie/bower_components/exif-js/exif.js"></script>
+      <script>
+          Demo.init()
+    </script>

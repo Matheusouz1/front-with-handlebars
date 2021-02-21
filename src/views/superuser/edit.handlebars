@@ -1,0 +1,30 @@
+<div class="cover bs-default m-0">
+    <div id="cover-img" class="overflow-hidden">
+        <img src="/assets/download.jpeg" width="100%" alt="">
+    </div>
+    <div id="title_store" class="pb-4 bg-white d-flex flex-column justify-content-center align-items-center position-relative" style="padding-top: 100px;">
+        <div id="profile-picture" class="rounded-circle overflow-hidden position-absolute" style="width: 150px; height:150px; border:5px solid white; top:-75px;">
+            <img src="{{response.data.profile_picture}}" width="100%" alt="" id="img">
+        </div>
+        <h1 class="text-center">{{response.data.store_name}} <a href=""><i class="fas fa-edit" style="font-size:20px;"></i></a></h1>
+        <p class="text-center">{{bio}}</p>
+    </div>
+    <script>
+
+    </script>
+
+
+</div>
+
+<div  class="bg-white mt-4">
+    <div class="container">
+        <h3 class="pt-3 pb-3"><i class="fas fa-home mr-2"></i>Endereço: {{response.data.adress}}-{{response.data.CEP}}</h3>  
+        <h3 class="pt-3 pb-3"><i class="fab fa-whatsapp mr-2"></i>whathsApp: {{response.data.whatsapp}}</h3>
+        <h3 class="pt-3 pb-3"><i class="fas fa-envelope mr-2"></i>Email: {{response.data.email}}</h3>
+
+    </div>
+</div>
+
+<script>
+    var linkEdit = document.querySelectorAll('')
+</script>

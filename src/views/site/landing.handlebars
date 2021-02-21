@@ -1,0 +1,11 @@
+<a href="/login">Entrar</a><hr>
+<a href="/cadastro">Cadastre-se</a>
+<hr>
+<h1>Lojas:</h1>
+<br>
+<ol>
+    {{!-- <li><a href="/{{store_link}}/info">a{{store_name}}</a></li> --}}
+    {{#each data}}
+    <li><a href="/{{store_link}}/info">{{store_name}}</a></li>
+    {{/each}}
+</ol>
